@@ -1,0 +1,111 @@
+.containerLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+
+  .containerFilter {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 232px;
+    height: 252px;
+    margin-left: 20px;
+    padding: 25px;
+    box-shadow: 2px 1px 4px 2px silver;
+
+    :global(.ant-checkbox-group) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+
+  .containerTickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 20px;
+
+    .containerBtn {
+      margin-bottom: 18px;
+
+      .LeftBtn {
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 50%;
+        height: 52px;
+        background: #ffffff;
+        color: #000000;
+        border-color: #A0B0B9;
+        transition-duration: 0.4s;
+      }
+
+      .LeftBtn:hover {
+        background: #2196f3;
+        color: #ffffff;
+      }
+
+      .RightBtn {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 50%;
+        height: 52px;
+        background: #ffffff;
+        color: #000000;
+        border-color: #A0B0B9;
+        transition-duration: 0.4s;
+      }
+
+      .RightBtn:hover {
+        background: #2196f3;
+        color: #ffffff;
+      }
+
+      :global(.ant-btn-ghost) {
+        width: 50%;
+      }
+    }
+
+    .containerTicketsList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.containerShowTicketsBtn {
+  :global(.ant-btn-primary) {
+    margin-bottom: 20px;
+    height: 52px;
+    border-radius: 7px;
+  }
+}
+
+.textError {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  width: 400px;
+}
+
+@media (max-width: 790px) {
+  .containerFilter {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .textError {
+    width: 200px;
+  }
+}
